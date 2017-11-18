@@ -252,7 +252,7 @@ export class NgxCarouselComponent
 
   ngOnChanges(changes: SimpleChanges) {
     // tslint:disable-next-line:no-unused-expression
-    this.moveToSlide &&
+    this.moveToSlide != null &&
       !changes.moveToSlide.firstChange &&
       this.moveTo(changes.moveToSlide.currentValue);
     }
